@@ -9,7 +9,7 @@ const Rates = () => {
         Power Rate Advisory
       </div>
       <div className="flex flex-col items-center justify-center">
-        <img src={img[0]} alt="rate" />
+        <img draggable={false} src={img[0]} alt="rate" />
       </div>
     </section>
   );

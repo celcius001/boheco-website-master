@@ -36,7 +36,7 @@ const Footer = () => {
               <div>
                 <div>(038) 412-1230 - 412-1239</div>
                 <div>bohecojagna@yahoo.com</div>
-                <div>Bohol Circumferentail Road</div>
+                <div>Bohol Circumferential Road</div>
                 <div>Cantagay, Jagna, 6308 Bohol, Philippines</div>
               </div>
             </div>

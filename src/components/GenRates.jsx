@@ -13,19 +13,19 @@ const Rates = () => {
         Breakdown Of Generation Charge For The Month Of March 2023
       </div>
       <div className="flex flex-col items-center justify-center">
-        <img src={img[0]} alt="rate" />
+        <img draggable={false} src={img[0]} alt="rate" />
       </div>
       <div className="flex items-center justify-center text-xl py-12 md:text-2xl lg:text-4xl font-[Gloock] font-extrabold lg:py-12 uppercase">
         Breakdown Of Generation Charge For The Month Of February 2023
       </div>
       <div className="flex flex-col items-center justify-center">
-        <img src={img[1]} alt="rate" />
+        <img draggable={false} src={img[1]} alt="rate" />
       </div>
       <div className="flex items-center justify-center text-xl py-12 md:text-2xl lg:text-4xl font-[Gloock] font-extrabold lg:py-12 uppercase">
         Breakdown Of Generation Charge For The Month Of January 2023
       </div>
       <div className="flex flex-col items-center justify-center">
-        <img src={img[2]} alt="rate" />
+        <img draggable={false} src={img[2]} alt="rate" />
       </div>
     </section>
   );

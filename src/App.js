@@ -4,6 +4,7 @@ import Advisory from "./pages/Advisory";
 import Partners from "./pages/Partners";
 import Inquiries from "./pages/Inquiry";
 import Attendance from "./pages/Attendance";
+import LifelineAdvisory from "./pages/LifelineAdvisory";
 import { Route, Routes, Navigate } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
@@ -19,6 +20,7 @@ function App() {
           <Route path="rate-advisory" element={<Advisory />} />
           <Route path="partners" element={<Partners />} />
           <Route path="inquiries" element={<Inquiries />} />
+          <Route path="lifeline" element={<LifelineAdvisory />} />
         </Route>
         <Route path="/attendance">
           <Route index element={<Attendance />} />

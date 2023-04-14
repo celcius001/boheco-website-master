@@ -30,6 +30,7 @@ const Card = ({
           <div className="block p-2 rounded-lg shadow-lg bg-white max-w-sm w-72 h-96">
             <div className="flex items-center justify-center">
               <img
+                draggable={false}
                 src={img[1]}
                 alt="president"
                 className="h-36 w-full object-cover"
@@ -51,6 +52,7 @@ const Card = ({
           <div className="block p-2 rounded-lg shadow-lg bg-white max-w-sm w-72 h-96">
             <div className="flex items-center justify-center">
               <img
+                draggable={false}
                 src={img[2]}
                 alt="vicepresident"
                 className="h-36 w-full object-cover"
@@ -72,6 +74,7 @@ const Card = ({
           <div className="block p-2 rounded-lg shadow-lg bg-white max-w-sm w-72 h-96">
             <div className="flex items-center justify-center">
               <img
+                draggable={false}
                 src={img[3]}
                 alt="chiefpro"
                 className="h-36 w-full object-cover"
@@ -91,6 +94,7 @@ const Card = ({
           <div className="block p-2 rounded-lg shadow-lg bg-white max-w-sm w-72 h-96">
             <div className="flex items-center justify-center">
               <img
+                draggable={false}
                 src={img[4]}
                 alt="empty"
                 className="h-36 w-full object-cover"
@@ -110,6 +114,7 @@ const Card = ({
           <div className="block p-2 rounded-lg shadow-lg bg-white max-w-sm w-72 h-96">
             <div className="flex items-center justify-center">
               <img
+                draggable={false}
                 src={img[4]}
                 alt="empty"
                 className="h-36 w-full object-cover"
@@ -129,6 +134,7 @@ const Card = ({
           <div className="block p-2 rounded-lg shadow-lg bg-white max-w-sm w-72 h-96">
             <div className="flex items-center justify-center">
               <img
+                draggable={false}
                 src={img[4]}
                 alt="empty"
                 className="h-36 w-full object-cover"
@@ -148,6 +154,7 @@ const Card = ({
           <div className="block p-2 rounded-lg shadow-lg bg-white max-w-sm w-72 h-96">
             <div className="flex items-center justify-center">
               <img
+                draggable={false}
                 src={img[4]}
                 alt="empty"
                 className="h-36 w-full object-cover"
@@ -167,6 +174,7 @@ const Card = ({
           <div className="block p-2 rounded-lg shadow-lg bg-white max-w-sm w-72 h-96">
             <div className="flex items-center justify-center">
               <img
+                draggable={false}
                 src={img[4]}
                 alt="empty"
                 className="h-36 w-full object-cover"
@@ -190,7 +198,12 @@ const Card = ({
           <div className="block p-2 rounded-lg shadow-lg bg-white max-w-sm w-72 h-96">
             <div className="flex items-center justify-center">
               {/* specific size from picture */}
-              <img src={img[0]} alt="gm" className="h-36 w-full object-cover" />
+              <img
+                draggable={false}
+                src={img[0]}
+                alt="gm"
+                className="h-36 w-full object-cover"
+              />
             </div>
             <div className="flex flex-col items-center justify-center pt-28">
               <h2 className="text-lg uppercase">Ex-Officio Member</h2>

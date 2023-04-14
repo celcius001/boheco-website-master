@@ -24,6 +24,7 @@ const Section = () => {
           </p>
         </div>
         <img
+          draggable={false}
           className="hidden lg:block lg:h-96 object-cover object-center px-4 bg-white p-4 rounded-lg"
           src={img[1]}
           alt="mission"
@@ -51,6 +52,7 @@ const Section = () => {
           </p>
         </div>
         <img
+          draggable={false}
           className="hidden lg:block lg:h-96 object-cover object-center px-4 bg-white p-4 rounded-lg"
           src={img[2]}
           alt="vision"

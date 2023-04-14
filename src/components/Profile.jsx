@@ -203,8 +203,8 @@ const Profile = ({ members, household, consumers, employees }) => {
           </div>
         </div>
         <div className="text-xl p-4 m-4 bg-slate-100 bg-opacity-40 shadow-lg rounded-lg cursor-pointer hover:bg-opacity-60">
-          <img src={img[0]} alt="logo" className="py-6" />
-          <img src={img[1]} alt="map" className="py-6" />
+          <img draggable={false} src={img[0]} alt="logo" className="py-6" />
+          <img draggable={false} src={img[1]} alt="map" className="py-6" />
         </div>
       </section>
     </section>
