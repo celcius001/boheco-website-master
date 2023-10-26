@@ -6,7 +6,7 @@ const img = [
   "assets/rates/gr2.png",
 ];
 
-const months = ["September", "August", "July"];
+const months = ["October", "September", "August"];
 
 const Rates = () => {
   return (
