@@ -5,6 +5,7 @@ import Partners from "./pages/Partners";
 import Inquiries from "./pages/Inquiry";
 import Attendance from "./pages/Attendance";
 import LifelineAdvisory from "./pages/LifelineAdvisory";
+import NeaAdvisory from "./pages/Notice";
 import { Route, Routes, Navigate } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
@@ -18,6 +19,7 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="rate-advisory" element={<Advisory />} />
+          <Route path="notice" element={<NeaAdvisory />} />
           <Route path="partners" element={<Partners />} />
           <Route path="inquiries" element={<Inquiries />} />
           <Route path="lifeline" element={<LifelineAdvisory />} />
