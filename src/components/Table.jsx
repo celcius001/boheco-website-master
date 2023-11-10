@@ -127,6 +127,9 @@ const Table = () => {
               <th className="p-3 text-sm font-semibold tracking-wide text-left">
                 OUT
               </th>
+              <th className="p-3 text-sm font-semibold tracking-wide text-left">
+                MINUTES LATE
+              </th>
             </tr>
           </thead>
           {empty ? (
@@ -155,6 +158,9 @@ const Table = () => {
                   </td>
                   <td className="p-3 text-sm text-gray-700">{post.SignIn}</td>
                   <td className="p-3 text-sm text-gray-700">{post.SignOut}</td>
+                  <td className="p-3 text-sm text-gray-700">
+                    {post.MinsLate === null ? "0" : post.MinsLate}
+                  </td>
                 </tr>
               ))}
             </tbody>
