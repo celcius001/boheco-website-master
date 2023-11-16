@@ -1,6 +1,6 @@
 import React from "react";
 
-const img = ["assets/h.jpeg", "/assets/m.jpeg", "/assets/v.jpeg"];
+const img = ["/assets/m.jpeg", "/assets/v.jpeg"];
 
 const Section = () => {
   return (
@@ -25,8 +25,8 @@ const Section = () => {
         </div>
         <img
           draggable={false}
-          className="hidden lg:block lg:h-96 object-cover object-center px-4 bg-white p-4 rounded-lg"
-          src={img[1]}
+          className="sm:hidden lg:block lg:h-96 object-cover object-center px-4 bg-white p-4 rounded-lg"
+          src={img[0]}
           alt="mission"
         />
       </div>
@@ -53,8 +53,8 @@ const Section = () => {
         </div>
         <img
           draggable={false}
-          className="hidden lg:block lg:h-96 object-cover object-center px-4 bg-white p-4 rounded-lg"
-          src={img[2]}
+          className="sm:hidden lg:block lg:h-96 object-cover object-center px-4 bg-white p-4 rounded-lg"
+          src={img[1]}
           alt="vision"
         />
       </div>
