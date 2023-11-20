@@ -3,7 +3,6 @@ import About from "./pages/About";
 import Advisory from "./pages/Advisory";
 import Partners from "./pages/Partners";
 import Inquiries from "./pages/Inquiry";
-import Attendance from "./pages/Attendance";
 import LifelineAdvisory from "./pages/LifelineAdvisory";
 import NeaAdvisory from "./pages/Notice";
 import { Route, Routes, Navigate } from "react-router-dom";
@@ -23,9 +22,6 @@ function App() {
           <Route path="partners" element={<Partners />} />
           <Route path="inquiries" element={<Inquiries />} />
           <Route path="lifeline" element={<LifelineAdvisory />} />
-        </Route>
-        <Route path="/attendance">
-          <Route index element={<Attendance />} />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
