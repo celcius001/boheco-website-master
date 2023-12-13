@@ -46,6 +46,8 @@ const noticeTwo = [
   "assets/noticetwo/17.jpg",
 ];
 
+const noticeThree = "assets/noticethree/01.jpg";
+
 const agmm = ["assets/agmm/01.jpg", "assets/agmm/02.jpg"];
 
 const noticeOneArray = [
@@ -159,7 +161,25 @@ const Notice = () => {
 
   return (
     <div>
-      <section>
+      <section className="pt-8">
+        <div className="flex items-center justify-center text-xl py-2 md:text-2xl lg:text-4xl font-[Gloock] font-extrabold lg:py-2 uppercase">Fueling Hope Lighting The Way
+        </div>
+        <span className="font-[Gloock] text-3xl tracking-widest">December 2023</span>
+        <div
+          ref={slideRef}
+          className="w-full select-one py-2 flex justify-center items-center relative"
+        >
+          <div>
+            <img
+              className="md:h-[900px] h-[720]"
+              draggable={false}
+              src={noticeThree}
+              alt="rate"
+            />
+          </div>
+        </div>
+      </section>
+      <section className="pt-8">
         <div className="flex items-center justify-center text-xl py-2 md:text-2xl lg:text-4xl font-[Gloock] font-extrabold lg:py-2 uppercase">
           41<sup className="font-light">st</sup> Annual General Membership
           Metting (AGMM)
@@ -194,7 +214,7 @@ const Notice = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="pt-8">
         <div className="flex items-center justify-center text-xl py-2 md:text-2xl lg:text-4xl font-[Gloock] font-extrabold lg:py-2 uppercase">
           ERC CASE NO. 2023-113 RC ORDER/ 10 OCTOBER 2023
         </div>
@@ -228,7 +248,7 @@ const Notice = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className="pt-8">
         <div className="flex items-center justify-center text-xl py-2 md:text-2xl lg:text-4xl font-[Gloock] font-extrabold lg:py-2 uppercase">
           ERC CASE NO. 2023-113 RC NOTICE OF VIRTUAL HEARING/ 10 OCTOBER 2023
         </div>
