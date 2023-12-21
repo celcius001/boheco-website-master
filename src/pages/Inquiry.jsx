@@ -15,10 +15,10 @@ const Inquiry = () => {
     // selecting the status class
     if (isActive === true) {
       //if the bot is active
-      status.innerHTML = "Active";
+      status.innerHTML = "Online";
       status.style.color = "green";
     } else {
-      status.innerHTML = "Not Active";
+      status.innerHTML = "Offline";
       status.style.color = "red";
     }
   };
