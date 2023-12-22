@@ -40,61 +40,89 @@ const Inquiry = () => {
       // if the input contains some question
       getBotMessage.innerText = "Typing...";
       setTimeout(() => {
-        getBotMessage.innerText = `To inquire your bill type this following format.\n\nBILL{space}<10-digit acctnum>{space}<bill-month>\nEx:\n BILL 010101xxxx 01-2023`;
+        getBotMessage.innerText = `To inquire your bill type this following format.\n\nBILL{space}<consumername>{space}<10-digit acctnum>{space}<bill-month>\nEx:\n BILL DOE, JOHN 010101xxxx 01-2023`;
         inputRef.value = ""; // clear the input
       }, 2000);
     }
     if (words === "BILL") {
       getBotMessage.innerText = "Typing...";
       setTimeout(() => {
-        getBotMessage.innerText = `To inquire your bill type this following format.\n\nBILL{space}<10-digit acctnum>{space}<bill-month>\nEx:\n BILL 010101xxxx 01-2023`;
+        getBotMessage.innerText = `To inquire your bill type this following format.\n\nBILL{space}<consumername>{space}<10-digit acctnum>{space}<bill-month>\nEx:\n BILL DOE, JOHN 010101xxxx 01-2023`;
         inputRef.value = ""; // clear the input
       }, 2000);
     }
-    if (words.split(" ")[1] === undefined) {
-    } else if (words.split(" ")[1].length === 10) {
-      if (words.split(" ")[2] === undefined || words.split(" ")[2].length < 7) {
+
+    // *** UPDATED ADDED CONSUMER_NAME INTO THE QUERY ***
+    try {
+      const getAccountNumber = words.split(" ")[words.split(" ").length - 2];
+      const getBillMonth = words.split(" ")[words.split(" ").length - 1];
+      const maxLen = words.split(" ").length - 2;
+
+      let getConsumerName = "";
+      for (let i = 1; i < maxLen; i++) {
+        getConsumerName += words.split(" ")[i] + " ";
+
+      }
+
+      if (getAccountNumber === undefined) {
+      } else if (getAccountNumber.length === 10) {
+        if (getBillMonth === undefined || getBillMonth.length < 7) {
+          getBotMessage.innerText = "Typing...";
+          setTimeout(() => {
+            getBotMessage.innerText = `To inquire your bill type this following format.\n\nBILL{space}<consumername>{space}<10-digit acctnum>{space}<bill-month>\nEx:\n BILL DOE, JOHN 010101xxxx 01-2023`;
+            inputRef.value = ""; // clear the input
+          }, 2000);
+        } else {
+          const acctNumber = getAccountNumber;
+          const servicePeriodEnd = getBillMonth;
+          const month = servicePeriodEnd.split("-")[0];
+          const year = servicePeriodEnd.split("-")[1];
+          const billPeriod = month + "/01/" + year;
+
+          const json = JSON.stringify({
+            ConsumerName: getConsumerName,
+            AccountNumber: acctNumber,
+            ServicePeriodEnd: billPeriod,
+          });
+
+          axios({
+            method: "POST",
+            url: process.env.REACT_APP_URL,
+            data: json,
+            headers: { "Content-Type": "application/json" },
+          })
+            .then((res) => {
+              getBotMessage.innerText = "Typing...";
+              setTimeout(() => {
+                getBotMessage.innerText = `${res.data.msg}`;
+              }, 2000);
+              inputRef.value = ""; // clean the input
+            })
+            .catch((err) => {
+              getBotMessage.innerText = "Typing...";
+              setTimeout(() => {
+                getBotMessage.innerText = `To inquire your bill type this following format.\n\nBILL{space}<consumername>{space}<10-digit acctnum>{space}<bill-month>\nEx:\n BILL DOE, JOHN 010101xxxx 01-2023`;
+                inputRef.value = ""; // clear the input
+              }, 2000);
+            });
+        }
+      } else {
         getBotMessage.innerText = "Typing...";
         setTimeout(() => {
-          getBotMessage.innerText = `To inquire your bill type this following format.\n\nBILL{space}<10-digit acctnum>{space}<bill-month>\nEx:\n BILL 010101xxxx 01-2023`;
+          getBotMessage.innerText = `To inquire your bill type this following format.\n\nBILL{space}<consumername>{space}<10-digit acctnum>{space}<bill-month>\nEx:\n BILL DOE, JOHN 010101xxxx 01-2023`;
           inputRef.value = ""; // clear the input
         }, 2000);
-      } else {
-        const acctNumber = words.split(" ")[1];
-        const servicePeriodEnd = words.split(" ")[2];
-        const month = servicePeriodEnd.split("-")[0];
-        const year = servicePeriodEnd.split("-")[1];
-        const billPeriod = month + "/01/" + year;
-        const json = JSON.stringify({
-          AccountNumber: acctNumber,
-          ServicePeriodEnd: billPeriod,
-        });
-
-        axios({
-          method: "POST",
-          url: process.env.REACT_APP_URL,
-          data: json,
-          headers: { "Content-Type": "application/json" },
-        })
-          .then((res) => {
-            getBotMessage.innerText = "Typing...";
-            setTimeout(() => {
-              getBotMessage.innerText = `${res.data.msg}`;
-            }, 2000);
-            inputRef.value = ""; // clean the input
-          })
-          .catch((err) => {
-            console.log(err);
-          });
       }
-    } else {
+      getHumanMessage.innerText = inputRef.value; // display the message
+
+    } catch (err) {
       getBotMessage.innerText = "Typing...";
       setTimeout(() => {
-        getBotMessage.innerText = `To inquire your bill type this following format.\n\nBILL{space}<10-digit acctnum>{space}<bill-month>\nEx:\n BILL 010101xxxx 01-2023`;
+        getBotMessage.innerText = `To inquire your bill type this following format.\n\nBILL{space}<consumername>{space}<10-digit acctnum>{space}<bill-month>\nEx:\n BILL DOE, JOHN 010101xxxx 01-2023`;
         inputRef.value = ""; // clear the input
       }, 2000);
     }
-    getHumanMessage.innerText = inputRef.value; // display the message
+
   };
   return (
     <div className="bg-image2 App" onLoad={checkStatus}>
