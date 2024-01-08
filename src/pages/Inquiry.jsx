@@ -5,12 +5,16 @@ import axios from "axios";
 const image = "assets/logo.png";
 
 const Inquiry = () => {
+  let isActive = false;
+  let isDisable = true;
+  const msg =
+    "Maayong Adlaw! Apologies for the inconvenience, but it seems our Bill Inquiries is currently undergoing some maintenance to enhance your experience. We'll be back online shortly to assist you. Thank you for your patience and understanding!";
+
   const humanMessage = useRef();
   const botmessage = useRef();
   const input = useRef();
 
   const checkStatus = (e) => {
-    let isActive = true;
     const status = document.querySelector(".status");
     // selecting the status class
     if (isActive === true) {
@@ -61,7 +65,6 @@ const Inquiry = () => {
       let getConsumerName = "";
       for (let i = 1; i < maxLen; i++) {
         getConsumerName += words.split(" ")[i] + " ";
-
       }
 
       if (getAccountNumber === undefined) {
@@ -114,7 +117,6 @@ const Inquiry = () => {
         }, 2000);
       }
       getHumanMessage.innerText = inputRef.value; // display the message
-
     } catch (err) {
       getBotMessage.innerText = "Typing...";
       setTimeout(() => {
@@ -122,7 +124,6 @@ const Inquiry = () => {
         inputRef.value = ""; // clear the input
       }, 2000);
     }
-
   };
   return (
     <div className="bg-image2 App" onLoad={checkStatus}>
@@ -134,19 +135,20 @@ const Inquiry = () => {
             </div>
             <div className="right">
               <div className="name">BOHECO II - Bill Inquiries</div>
-              <div className="status">Active</div>
+              <div className="status">Online</div>
             </div>
           </div>
           <div className="main">
             <div className="main_content">
               <div className="messages">
                 <div className="bot-message" id="message1" ref={botmessage}>
-                  <p>
+                  {/* <p>
                     Maayong Adlaw!<br></br>
                     Mga Membro, Konsumedor, Tag-iya sa BOHECO DOS!<br></br>
                     <br></br>
                     Type "BILL HELP" for more information!
-                  </p>
+                  </p> */}
+                  {msg}
                 </div>
                 <div
                   className="human-message"
@@ -160,6 +162,7 @@ const Inquiry = () => {
             <div className="btm">
               <div className="input">
                 <input
+                  disabled={isDisable}
                   type="text"
                   id="input"
                   placeholder="Enter your message"
@@ -167,7 +170,7 @@ const Inquiry = () => {
                 />
               </div>
               <div className="btn">
-                <button onClick={handleInput}>
+                <button disabled={isDisable} onClick={handleInput}>
                   <i className="fas fa-paper-plane"></i>Send
                 </button>
               </div>
