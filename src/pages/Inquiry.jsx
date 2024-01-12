@@ -5,10 +5,10 @@ import axios from "axios";
 const image = "assets/logo.png";
 
 const Inquiry = () => {
-  let isActive = false;
-  let isDisable = true;
-  const msg =
-    "Maayong Adlaw! Apologies for the inconvenience, but it seems our Bill Inquiries is currently undergoing some maintenance to enhance your experience. We'll be back online shortly to assist you. Thank you for your patience and understanding!";
+  let isActive = true;
+  let isDisable = false;
+  // const msg =
+  //   "Maayong Adlaw! Apologies for the inconvenience, but it seems our Bill Inquiries is currently undergoing some maintenance to enhance your experience. We'll be back online shortly to assist you. Thank you for your patience and understanding!";
 
   const humanMessage = useRef();
   const botmessage = useRef();
@@ -142,13 +142,12 @@ const Inquiry = () => {
             <div className="main_content">
               <div className="messages">
                 <div className="bot-message" id="message1" ref={botmessage}>
-                  {/* <p>
+                  <p>
                     Maayong Adlaw!<br></br>
                     Mga Membro, Konsumedor, Tag-iya sa BOHECO DOS!<br></br>
                     <br></br>
                     Type "BILL HELP" for more information!
-                  </p> */}
-                  {msg}
+                  </p>
                 </div>
                 <div
                   className="human-message"
