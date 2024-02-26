@@ -13,15 +13,51 @@ const About = () => {
   const employees = "232";
 
   /* CARD */
-  const district_1 = "RAUL PAGARAN";
-  const district_2 = "CANDELARIO BAGO";
-  const district_3 = "CHRISTINE G. LAGURA";
-  const district_4 = "SIXTO BUDIONGAN JR";
-  const district_5 = "NOEL D. VILLANUEVA";
-  const district_6 = "RUEL E. MABAQUIAO";
-  const district_7 = "";
-  const district_8 = "ROBERTO O. LANGAMEN";
-  const district_9 = "ARNULDO S. LUGOD";
+  const district_1 = [
+    "DISTRICT III REPRESENTATIVE",
+    "RAUL N. PAGARAN",
+    "G-HERNARDEZ, VALENCIA",
+  ];
+  const district_2 = [
+    "DISTRICT III REPRESENTATIVE",
+    "GENARO D. MENDE",
+    "JAGNA & DUERO",
+  ];
+  const district_3 = [
+    "DISTRICT III REPRESENTATIVE",
+    "CHRISTINE G. LAGURA",
+    "GUINDULMA & ANDA",
+  ];
+  const district_4 = [
+    "DISTRICT IV REPRESENTATIVE",
+    "SIXTO B. BUDIONGAN JR",
+    "CANDIJAY, MABINI & ALICIA",
+  ];
+  const district_5 = [
+    "DISTRICT V REPRESENTATIVE",
+    "NOEL D. VILLANUEVA",
+    "UBAY & CPG ISLAND",
+  ];
+  const district_6 = [
+    "DISTRICT VI REPRESENTATIVE",
+    "RUEL E. MABAQUIAO",
+    "PILAR & SIERRA-BULLONES",
+  ];
+  const district_7 = [
+    "DISTRICT VII REPRESENTATIVE",
+    "CRISTITA A. CERICOS",
+    "SAN MIGUEL, DAGOHOY & DANAO",
+  ];
+  const district_8 = [
+    "DISTRICT VIII REPRESENTATIVE",
+    "ROBERTO O. LANGAMEN",
+    "TRINIDAD, BIEN-UNIDO & TALIBON",
+  ];
+  const district_9 = [
+    "DISTRICT IX REPRESENTATIVE",
+    "ARNULDO S. LUGOD",
+    "GETAFE & BUENAVISTA",
+  ];
   return (
     <div className="bg-image2 flex flex-col items-center justify-center">
       <Section />
