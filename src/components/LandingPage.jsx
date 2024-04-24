@@ -10,8 +10,7 @@ const LandingPage = () => {
         BOHECO II
       </div>
       <div className="font-[Gloock] py-4 md:text-4xl text-lg text-gray-900 drop-shadow-lg">
-        "Bringing light of the lives of the people who are the
-        member-consumer-owners."
+        "Bringing light into the lives of our Member-Consumer-Owners (MCOs)."
       </div>
     </div>
   );
