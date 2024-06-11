@@ -15,6 +15,7 @@ const Navigation = () => {
     { id: 5, name: "LIFELINE RATE", link: "lifeline" },
     { id: 6, name: "PAYMENT PARTNERS", link: "partners" },
     { id: 7, name: "BILL INQUIRIES", link: "inquiries" },
+    { id: 8, name: "PRIVACY NOTICE", link: "privacy-notice" },
   ];
 
   const [open, setOpen] = useState(false);
@@ -41,10 +42,11 @@ const Navigation = () => {
           {open ? <FaTimes /> : <FaBars />}
         </div>
         <ul
-          className={`lg:flex lg:item-center lg:pb-0 pb-12 absolute lg:static bg-white lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-300 ease-in ${open
-            ? "top-20 opacity-100"
-            : "top-[-490px] lg:opacity-100 opacity-0"
-            }`}
+          className={`lg:flex lg:item-center lg:pb-0 pb-12 absolute lg:static bg-white lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-300 ease-in ${
+            open
+              ? "top-20 opacity-100"
+              : "top-[-490px] lg:opacity-100 opacity-0"
+          }`}
         >
           {Links.map((link) => (
             <li key={link.id} className="lg:ml-8 text-xl md:my-0 my-7">

@@ -8,6 +8,7 @@ import NeaAdvisory from "./pages/Notice";
 import { Route, Routes, Navigate } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+import Privacy from "./pages/Privacy";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="partners" element={<Partners />} />
           <Route path="inquiries" element={<Inquiries />} />
           <Route path="lifeline" element={<LifelineAdvisory />} />
+          <Route path="privacy-notice" element={<Privacy />} />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
