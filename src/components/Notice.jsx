@@ -162,9 +162,12 @@ const Notice = () => {
   return (
     <div>
       <section className="pt-8">
-        <div className="flex items-center justify-center text-xl py-2 md:text-2xl lg:text-4xl font-[Gloock] font-extrabold lg:py-2 uppercase">Fueling Hope Lighting The Way
+        <div className="flex items-center justify-center text-xl py-2 md:text-2xl lg:text-4xl font-[Gloock] font-extrabold lg:py-2 uppercase">
+          Fueling Hope Lighting The Way
         </div>
-        <span className="font-[Gloock] text-3xl tracking-widest">December 2023</span>
+        <span className="font-[Gloock] text-2xl tracking-widest">
+          December 2023
+        </span>
         <div
           ref={slideRef}
           className="w-full select-one py-2 flex justify-center items-center relative"
@@ -174,7 +177,7 @@ const Notice = () => {
               className="md:h-[900px] h-[720]"
               draggable={false}
               src={noticeThree}
-              alt="rate"
+              alt="notice"
             />
           </div>
         </div>
@@ -193,7 +196,7 @@ const Notice = () => {
               className="md:h-[900px] h-[720]"
               draggable={false}
               src={agmmArray[agmmIndex]}
-              alt="rate"
+              alt="notice"
             />
           </div>
           <div className="absolute w-full top-1/2 trasform translate-y-1/2 py-2 flex justify-between items-center">
@@ -227,7 +230,7 @@ const Notice = () => {
               className="md:h-[960px] h-[720]"
               draggable={false}
               src={noticeOneArray[noticeOneIndex]}
-              alt="rate"
+              alt="notice"
             />
           </div>
           <div className="absolute w-full top-1/2 trasform translate-y-1/2 py-2 flex justify-between items-center">
@@ -261,7 +264,7 @@ const Notice = () => {
               className="md:h-[960px] h-[720]"
               draggable={false}
               src={noticeTwoArray[noticeTwoIndex]}
-              alt="rate"
+              alt="notice"
             />
           </div>
           <div className="absolute w-full top-1/2 trasform translate-y-1/2 py-2 flex justify-between items-center">
