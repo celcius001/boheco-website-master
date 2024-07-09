@@ -14,12 +14,12 @@ const About = () => {
 
   /* CARD */
   const district_1 = [
-    "DISTRICT III REPRESENTATIVE",
+    "DISTRICT I REPRESENTATIVE",
     "RAUL N. PAGARAN",
     "G-HERNARDEZ, VALENCIA",
   ];
   const district_2 = [
-    "DISTRICT III REPRESENTATIVE",
+    "DISTRICT II REPRESENTATIVE",
     "GENARO D. MENDE",
     "JAGNA & DUERO",
   ];

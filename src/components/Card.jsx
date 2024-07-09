@@ -19,6 +19,8 @@ const img = [
   "assets/bod/BOD9-d.jpg",
 ];
 
+const temp = ["assets/pe.png"];
+
 const Card = ({
   district_1,
   district_2,
@@ -243,31 +245,33 @@ const Card = ({
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h2 className="text-lg uppercase">Engr. Eugenio R. Tan</h2>
+                <h2 className="text-md uppercase">Eugenio R. Tan, REE, MPA</h2>
                 <h1 className="text-sm uppercase text-slate-700">
                   General Manager
                 </h1>
               </div>
             </div>
           </div>
-          {/* <div className="sm:w-1/2 lg:w-1/4 py-10">
-            <div className="block p-2 rounded-lg shadow-lg bg-white max-w-sm w-72 h-96">
+          <div className="sm:w-1/2 lg:w-1/4 py-10">
+            <div className="block p-2 rounded-lg shadow-lg bg-white max-w-sm w-72 h-auto">
               <div className="flex items-center justify-center">
                 <img
                   draggable={false}
-                  src={img[4]}
+                  src={img[2]}
                   alt="empty"
-                  className="h-48 w-full object-cover"
+                  className="h-full w-full"
                 />
               </div>
-              <div className="flex flex-col items-center justify-center pt-28">
-                <h2 className="text-lg uppercase">-</h2>
+
+              {/* TODO ! */}
+              <div className="flex flex-col items-center justify-center">
+                <h2 className="text-md uppercase">Ellen O. Bayhon, CPA, MPA</h2>
                 <h1 className="text-sm uppercase text-slate-700">
-                  FSD Manager
+                  Acting FSD Manager
                 </h1>
               </div>
             </div>
-          </div> */}
+          </div>
           <div className="sm:w-1/2 lg:w-1/4 py-10">
             <div className="block p-2 rounded-lg shadow-lg bg-white max-w-sm w-72 h-auto">
               <div className="flex items-center justify-center">
@@ -279,7 +283,7 @@ const Card = ({
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h2 className="text-lg uppercase">Noel M. Aleman, REE, MPA</h2>
+                <h2 className="text-md uppercase">Noel M. Aleman, REE, MPA</h2>
                 <h1 className="text-sm uppercase text-slate-700">
                   TSD Manager
                 </h1>
@@ -297,7 +301,7 @@ const Card = ({
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h2 className="text-lg uppercase">Tito O. Andamon</h2>
+                <h2 className="text-md uppercase">Tito O. Andamon, MPA</h2>
                 <h1 className="text-sm uppercase text-slate-700">
                   ISD Manager
                 </h1>
@@ -305,19 +309,21 @@ const Card = ({
             </div>
           </div>
           <div className="sm:w-1/2 lg:w-1/4 py-10">
-            <div className="block p-2 rounded-lg shadow-lg bg-white max-w-sm w-72 h-auto">
+            <div className="block p-2 rounded-lg shadow-lg bg-white max-w-sm w-72 h-[470px]">
               <div className="flex items-center justify-center">
                 <img
                   draggable={false}
-                  src={img[2]}
+                  src={temp[0]}
                   alt="empty"
                   className="h-full w-full"
                 />
               </div>
-              <div className="flex flex-col items-center justify-center">
-                <h2 className="text-lg uppercase">Ellen O. Bayhon, CPA, MPA</h2>
+
+              {/* TODO ! */}
+              <div className="flex flex-col items-center justify-center pt-32">
+                <h2 className="text-md uppercase">Adrian C. Forones, CPA</h2>
                 <h1 className="text-sm uppercase text-slate-700">
-                  Internal Auditor
+                  Acting Internal Auditor
                 </h1>
               </div>
             </div>
@@ -333,7 +339,7 @@ const Card = ({
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h2 className="text-lg uppercase">
+                <h2 className="text-md uppercase">
                   Vicente P. Melencion, Jr., REE
                 </h2>
                 <h1 className="text-sm uppercase text-slate-700">
@@ -353,7 +359,7 @@ const Card = ({
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h2 className="text-lg uppercase">Raywin Q. Flor, REE, MPA</h2>
+                <h2 className="text-md uppercase">Raywin Q. Flor, REE, MPA</h2>
                 <h1 className="text-sm uppercase text-slate-700">
                   Talibon Area Manager
                 </h1>
@@ -371,7 +377,7 @@ const Card = ({
                 />
               </div>
               <div className="flex flex-col items-center justify-center">
-                <h2 className="text-lg uppercase">
+                <h2 className="text-md uppercase">
                   Ariel G. Torrejos, REE, RME, MPA
                 </h2>
                 <h1 className="text-sm uppercase text-slate-700">
