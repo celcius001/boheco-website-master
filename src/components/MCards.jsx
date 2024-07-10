@@ -2,7 +2,7 @@ import React from "react";
 
 function Cards({ img, name, title }) {
   return (
-    <div className="sm:w-1/2 lg:w-1/4 py-10">
+    <div className="p-12">
       <div className="block p-2 rounded-lg shadow-lg bg-white max-w-sm w-72 h-auto">
         <div className="flex items-center justify-center">
           {/* specific size from picture */}

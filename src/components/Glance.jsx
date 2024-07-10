@@ -4,7 +4,7 @@ const About = ({ employees }) => {
   return (
     <section>
       {/* AT A GLANCE */}
-      <div className="text-xl py-2 md:text-2xl lg:text-4xl font-[Gloock] font-extrabold lg:py-5 uppercase text-center">
+      <div className="flex justify-center text-center text-4xl font-[Gloock] font-extrabold uppercase">
         Bohol II Electric Cooperative, Inc.
       </div>
       <section className="container py-8 md:pl-24 mx-auto flex  lg:flex-row flex-col md:justify-beteew justify-center">

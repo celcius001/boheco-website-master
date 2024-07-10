@@ -17,7 +17,7 @@ const CardManagement = () => {
   return (
     <section>
       {/* MANAGEMENT */}
-      <div className="text-center text-xl py-2 md:text-2xl lg:text-4xl font-[Gloock] font-extrabold lg:py-5 uppercase">
+      <div className="flex justify-center text-center text-4xl font-[Gloock] font-extrabold uppercase">
         Management
       </div>
       <section>
@@ -31,7 +31,7 @@ const CardManagement = () => {
         </div>
 
         {/* DEPARMENT MANAGERS */}
-        <div className="flex lg:flex-row flex-col justify-between items-center">
+        <div className="flex justify-center lg:flex-row flex-col gap-6 items-center">
           <MCards
             img={img[1]}
             name={"Noel M. Aleman, REE, MPA"}
@@ -47,23 +47,21 @@ const CardManagement = () => {
             name={"Ellen O. Bayhon, CPA, MPA"}
             title={"FSD Manager"}
           />
-        </div>
-
-        {/* OFFICE OF THE GENERAL MANAGER */}
-        <div className="flex lg:flex-row flex-col justify-evenly items-center">
           <MCards
             img={temp[0]}
             name={"Adrian C. Forones, CPA"}
             title={"Acting Internal Auditor"}
           />
+        </div>
+
+        <div className="flex justify-center lg:flex-row flex-col gap-6 items-center">
+          {/* OFFICE OF THE GENERAL MANAGER */}
           <MCards
             img={img[6]}
             name={"Ariel G. Torrejos, REE, RME, MPA"}
             title={"Corporate Planning Manager"}
           />
-        </div>
-        {/* AREA OFFICE MANAGERS */}
-        <div className="flex lg:flex-row flex-col justify-evenly items-center">
+          {/* AREA OFFICE MANAGERS */}
           <MCards
             img={img[4]}
             name={"Vicente P. Melencion, Jr., REE"}

@@ -5,7 +5,7 @@ const img = ["assets/l.png", "assets/m2.jpg"];
 const Profile = ({ members, household, consumers, employees }) => {
   return (
     <section>
-      <div className="flex items-center justify-center text-xl py-2 md:text-2xl lg:text-4xl font-[Gloock] font-extrabold lg:py-5 uppercase">
+      <div className="flex justify-center text-center text-4xl font-[Gloock] font-extrabold uppercase">
         Our Profile
       </div>
       <section className="container py-8 md:pl-24 mx-auto flex  lg:flex-row flex-col-reverse md:justify-beteew justify-center">
