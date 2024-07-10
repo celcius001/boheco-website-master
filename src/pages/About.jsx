@@ -4,6 +4,8 @@ import Section from "../components/Section";
 import Glance from "../components/Glance";
 import Profile from "../components/Profile";
 import Card from "../components/Card";
+import CardManagement from "../components/CardManagement";
+import CardBoard from "../components/CardBoard";
 
 const About = () => {
   /* PROFILE */
@@ -68,17 +70,8 @@ const About = () => {
         consumers={consumers}
         employees={employees}
       />
-      <Card
-        district_1={district_1}
-        district_2={district_2}
-        district_3={district_3}
-        district_4={district_4}
-        district_5={district_5}
-        district_6={district_6}
-        district_7={district_7}
-        district_8={district_8}
-        district_9={district_9}
-      />
+      <CardManagement />
+      <CardBoard />
     </div>
   );
 };
