@@ -60,11 +60,11 @@ const Lifeline = () => {
 
   return (
     <section>
-      <div className="flex items-center justify-center text-xl py-12 md:text-2xl lg:text-4xl font-[Gloock] font-extrabold lg:py-12 uppercase">
+      <div className="flex justify-center text-center text-4xl font-[Gloock] font-extrabold uppercase">
         Lifeline Rate
       </div>
       <div className="flex flex-col items-center justify-center">
-        <div className="w-[700px]">
+        <div className="lg:max-w-2xl max-w-sm">
           <img
             draggable={false}
             className="py-6"

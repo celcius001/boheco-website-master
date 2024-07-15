@@ -6,12 +6,11 @@ const img = [
   "assets/management/TSD-d.jpg",
   "assets/management/ISD-d.jpg",
   "assets/management/ELLEN-d.jpg",
+  "assets/management/ADRIAN-d.jpg",
+  "assets/management/CORPLAN-d.jpg",
   "assets/management/UBAY-d.jpg",
   "assets/management/TALIBON-d.jpg",
-  "assets/management/CORPLAN-d.jpg",
 ];
-
-const temp = ["assets/pe.png"];
 
 const CardManagement = () => {
   return (
@@ -48,7 +47,7 @@ const CardManagement = () => {
             title={"FSD Manager"}
           />
           <MCards
-            img={temp[0]}
+            img={img[4]}
             name={"Adrian C. Forones, CPA"}
             title={"Acting Internal Auditor"}
           />
@@ -57,18 +56,18 @@ const CardManagement = () => {
         <div className="flex justify-center lg:flex-row flex-col gap-6 items-center">
           {/* OFFICE OF THE GENERAL MANAGER */}
           <MCards
-            img={img[6]}
+            img={img[5]}
             name={"Ariel G. Torrejos, REE, RME, MPA"}
             title={"Corporate Planning Manager"}
           />
           {/* AREA OFFICE MANAGERS */}
           <MCards
-            img={img[4]}
+            img={img[6]}
             name={"Vicente P. Melencion, Jr., REE"}
             title={"Ubay Area Manager"}
           />
           <MCards
-            img={img[5]}
+            img={img[7]}
             name={"Raywin Q. Flor, REE, MPA"}
             title={"Talibon Area Manager"}
           />
