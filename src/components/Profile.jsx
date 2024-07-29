@@ -116,7 +116,7 @@ const Profile = ({ members, household, consumers, employees }) => {
             <div>
               <div>
                 Operation Period:{" "}
-                <span className="font-bold text-cyan-700">43 years</span>
+                <span className="font-bold text-cyan-700">46 years</span>
               </div>
             </div>
             <div>
@@ -137,18 +137,18 @@ const Profile = ({ members, household, consumers, employees }) => {
             <div>
               <div>
                 % Residential Connections:{" "}
-                <span className="font-bold text-cyan-700">92%</span>
+                <span className="font-bold text-cyan-700">94%</span>
               </div>
             </div>
             <div>
               <div>
                 % Commercial/Industrial Connections:{" "}
-                <span className="font-bold text-cyan-700">8%</span>
+                <span className="font-bold text-cyan-700">6%</span>
               </div>
             </div>
             <div>
               <div>
-                EC Categorization as of 2018 (NEA):{" "}
+                EC Categorization as of 2023 (NEA):{" "}
                 <span className="font-bold text-cyan-700">AAA</span>
               </div>
             </div>
@@ -162,7 +162,7 @@ const Profile = ({ members, household, consumers, employees }) => {
               <div>
                 Total No. of Members:{" "}
                 <span className="font-bold text-cyan-700">
-                  {members} (As of December 2018)
+                  {members} (As of December 2023)
                 </span>
               </div>
             </div>
@@ -170,7 +170,7 @@ const Profile = ({ members, household, consumers, employees }) => {
               <div>
                 Total No. Household Connections:{" "}
                 <span className="font-bold text-cyan-700">
-                  {household} (As of December 2018)
+                  {household} (As of December 2023)
                 </span>
               </div>
             </div>
@@ -178,7 +178,7 @@ const Profile = ({ members, household, consumers, employees }) => {
               <div>
                 Total No. of Potential Consumers:{" "}
                 <span className="font-bold text-cyan-700">
-                  {consumers} (As of December 2018)
+                  {consumers} (As of December 2023)
                 </span>
               </div>
             </div>
@@ -186,22 +186,20 @@ const Profile = ({ members, household, consumers, employees }) => {
               <div>
                 Average No. of Employees:{" "}
                 <span className="font-bold text-cyan-700">
-                  {employees} (As of January 2019)
+                  {employees} (As of December 2023)
                 </span>
               </div>
             </div>
             <div>
               <div>
                 Total length of lines installed:{" "}
-                <span className="font-bold text-cyan-700">4,153.739 KM.</span>
+                <span className="font-bold text-cyan-700">4,362.508 KM.</span>
               </div>
             </div>
             <div>
               <div>
                 Peak Load:{" "}
-                <span className="font-bold text-cyan-700">
-                  23.851 Mega Watt
-                </span>
+                <span className="font-bold text-cyan-700">28.66 Mega Watt</span>
               </div>
             </div>
           </div>
