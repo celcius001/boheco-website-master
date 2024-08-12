@@ -90,7 +90,7 @@ const Inquiry = () => {
 
           axios({
             method: "POST",
-            url: "https://bill-inquiry-api.onrender.com/api/v1/billInquires",
+            url: process.env.REACT_APP_API_URL,
             data: json,
             headers: { "Content-Type": "application/json" },
           })
