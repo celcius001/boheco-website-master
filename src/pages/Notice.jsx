@@ -9,11 +9,19 @@ import NoticeBid6 from "../components/NoticeBid6";
 import NoticeBid7 from "../components/NoticeBid7";
 import NoticeBid9 from "../components/NoticeBid9";
 import NoticeBid8 from "../components/NoticeBid8";
+import NoticeAward from "../components/NoticeAward";
 
 function Advisory() {
   return (
     <>
       <div className="bg-image2 flex flex-col items-center justify-center">
+        <section className="container px-5 py-24 mx-auto">
+          <div className="text-center mb-12">
+            <div className="text-4xl font-extrabold py-2 uppercase">
+              <NoticeAward />
+            </div>
+          </div>
+        </section>
         <section className="container px-5 py-24 mx-auto">
           <div className="text-center mb-12">
             <div className="text-4xl font-extrabold py-2 uppercase">
