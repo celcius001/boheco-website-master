@@ -8,10 +8,10 @@ import CardBoard from "../components/CardBoard";
 
 const About = () => {
   /* PROFILE */
-  const members = "154,522";
-  const household = "140,489";
+  const members = "154,779";
+  const household = "172,102";
   const consumers = "161,031";
-  const employees = "261";
+  const employees = "268";
 
   return (
     <div className="bg-image2 flex flex-col items-center justify-center">
