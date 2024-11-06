@@ -1,8 +1,8 @@
-import React from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { BsFacebook } from "react-icons/bs";
 import { FaTimes, FaBars } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
 
 const img = ["assets/l.png"];
 
@@ -19,15 +19,18 @@ const Navigation = () => {
   ];
 
   const [open, setOpen] = useState(false);
+  const location = useLocation();
+
+  useEffect(() => {
+    setOpen(false);
+  }, [location.pathname]);
 
   return (
     <div className="shadow-md w-full top-0 left-0 fixed z-50">
-      <div className="lg:flex items-center justify-between bg-white py-4 md:px-10 px-7">
+      <div className="flex items-center justify-between bg-white py-4 px-10">
         <div className="font-bold text-2xl cursor-pointer flex items-center justify-center text-gray-800">
           <img src={img[0]} alt="logo" className="w-12 h-12" />
-          <div className="px-4 sm:block hidden text-lg md:text-2xl lg:text-3xl">
-            BOHECO II
-          </div>
+          <div className="px-4 sm:block hidden text-2xl ">BOHECO II</div>
           <a
             className="text-blue-600 sm:px-0 px-4"
             href="https://www.facebook.com/boheco2"
@@ -37,19 +40,19 @@ const Navigation = () => {
         </div>
         <div
           onClick={() => setOpen(!open)}
-          className="text-3xl absolute right-8 top-6 cursor-pointer lg:hidden"
+          className="text-3xl absolute right-8 top-6 cursor-pointer 2xl:hidden"
         >
           {open ? <FaTimes /> : <FaBars />}
         </div>
         <ul
-          className={`lg:flex lg:item-center lg:pb-0 pb-12 absolute lg:static bg-white lg:z-auto z-[-1] left-0 w-full lg:w-auto lg:pl-0 pl-9 transition-all duration-300 ease-in ${
+          className={`2xl:flex 2xl:item-center pb-0 absolute 2xl:static bg-white 2xl:z-auto z-[-1] left-0 w-full 2xl:w-auto 2xl:pl-0 pl-9 transition-all duration-300 ease-in ${
             open
               ? "top-20 opacity-100"
-              : "top-[-490px] lg:opacity-100 opacity-0"
+              : "top-[-490px] 2xl:opacity-100 opacity-0"
           }`}
         >
           {Links.map((link) => (
-            <li key={link.id} className="lg:ml-8 text-xl md:my-0 my-7">
+            <li key={link.id} className="ml-7 text-xl py-2">
               <NavLink
                 to={link.link}
                 className={({ isActive }) =>
