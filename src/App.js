@@ -9,6 +9,7 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import Privacy from "./pages/Privacy";
+import DdpPspp from "./pages/DdpPspp";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="rate-advisory" element={<Advisory />} />
           <Route path="notice" element={<NeaAdvisory />} />
+          <Route path="ddpandpspp" element={<DdpPspp />} />
           <Route path="partners" element={<Partners />} />
           <Route path="inquiries" element={<Inquiries />} />
           <Route path="lifeline" element={<LifelineAdvisory />} />
