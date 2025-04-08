@@ -1,10 +1,10 @@
 import React from "react";
 
 const img = [
-  "assets/rates/feb2025/slide1.JPG",
-  "assets/rates/feb2025/slide2.JPG",
-  "assets/rates/feb2025/slide3.JPG",
-  "assets/rates/feb2025/slide4.JPG",
+  "assets/rates/mar2025/slide1.JPG",
+  "assets/rates/mar2025/slide2.JPG",
+  "assets/rates/mar2025/slide3.JPG",
+  "assets/rates/mar2025/slide4.JPG",
 ];
 
 const Rates = () => {
