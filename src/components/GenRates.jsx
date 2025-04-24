@@ -2,11 +2,11 @@ import React from "react";
 
 const img = [
   "assets/rates/gr0.JPG",
-  "assets/rates/gr1.png",
+  "assets/rates/gr1.JPG",
   "assets/rates/gr2.png",
 ];
 
-const months = ["March", "February", "January"];
+const months = ["April", "March", "February"];
 
 const Rates = () => {
   return (
