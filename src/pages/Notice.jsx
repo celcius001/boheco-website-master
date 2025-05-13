@@ -13,11 +13,68 @@ function Notice() {
                 <ul className="space-y-4">
                   <li>
                     <NoticeComponent
+                      title={"PB-ITB-R7-1-2025"}
+                      path={
+                        "assets/notice/PB-ITB-R7-1-2025/PB-ITB-R7-1-2025_page-0001.jpg"
+                      }
+                    />
+                    <ListComponent
+                      title={"PB-ITB-R7-1-2025"}
+                      url={
+                        "https://drive.google.com/file/d/1QauvDKMExDlzyHbEhOhxG8NliK8NcKej/view?usp=drive_link"
+                      }
+                    />
+                  </li>
+                  <li>
+                    <NoticeComponent
+                      title={"PB-ITB-R7-2-2025"}
+                      path={
+                        "assets/notice/PB-ITB-R7-2-2025/PB-ITB-R7-2-2025_page-0001.jpg"
+                      }
+                    />
+                    <ListComponent
+                      title={"PB-ITB-R7-2-2025"}
+                      url={
+                        "https://drive.google.com/file/d/1-p-0XqazTO9Yqbz-PAaQF7KNflCcZbb9/view?usp=drive_linkhttps://drive.google.com/file/d/1QauvDKMExDlzyHbEhOhxG8NliK8NcKej/view?usp=drive_link"
+                      }
+                    />
+                  </li>
+                  <li>
+                    <NoticeComponent
+                      title={"PB-ITB-R7-3-2025"}
+                      path={
+                        "assets/notice/PB-ITB-R7-3-2025/PB-ITB-R7-3-2025_page-0001.jpg"
+                      }
+                    />
+                    <ListComponent
+                      title={"PB-ITB-R7-3-2025"}
+                      url={
+                        "https://drive.google.com/file/d/1D9KXNP-IKGNmyWsW1_XpY67OwZuacJQC/view?usp=drive_link"
+                      }
+                    />
+                  </li>
+
+                  <li>
+                    <NoticeComponent
                       title={"2024-029 CF BOHECO II OU Application"}
                       path={
                         "assets/notice/129. 2024-029 CF BOHECO II OU Application_page-0001.jpg"
                       }
                     />
+                    <li>
+                      <NoticeComponent
+                        title={"PB-ITB-R7-2-2025"}
+                        path={
+                          "assets/notice/PB-ITB-R7-2-2025/PB-ITB-R7-2-2025_page-0001.jpg"
+                        }
+                      />
+                      <ListComponent
+                        title={"PB-ITB-R7-2-2025"}
+                        url={
+                          "https://drive.google.com/file/d/1-p-0XqazTO9Yqbz-PAaQF7KNflCcZbb9/view?usp=drive_linkhttps://drive.google.com/file/d/1QauvDKMExDlzyHbEhOhxG8NliK8NcKej/view?usp=drive_link"
+                        }
+                      />
+                    </li>
                     <ListComponent
                       title={"2024-029 CF BOHECO II OU Application"}
                       url={
