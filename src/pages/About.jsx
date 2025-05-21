@@ -14,7 +14,7 @@ const About = () => {
   const employees = "268";
 
   return (
-    <div className="bg-image2 flex flex-col items-center justify-center">
+    <div className="bg-image2 flex flex-col items-center justify-center overflow-hidden">
       <Section />
       <Glance employees={employees} />
       <Profile

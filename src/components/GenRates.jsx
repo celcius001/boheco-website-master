@@ -3,10 +3,10 @@ import React from "react";
 const img = [
   "assets/rates/gr0.JPG",
   "assets/rates/gr1.JPG",
-  "assets/rates/gr2.png",
+  "assets/rates/gr2.JPG",
 ];
 
-const months = ["April", "March", "February"];
+const months = ["May", "April", "March"];
 
 const Rates = () => {
   return (

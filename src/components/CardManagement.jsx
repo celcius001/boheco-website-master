@@ -30,7 +30,7 @@ const CardManagement = () => {
         </div>
 
         {/* DEPARMENT MANAGERS */}
-        <div className="flex justify-center lg:flex-row flex-col gap-6 items-center">
+        <div className="flex justify-center 2xl:flex-row flex-col gap-6 items-center">
           <MCards
             img={img[1]}
             name={"Noel M. Aleman, REE, MPA"}
@@ -53,7 +53,7 @@ const CardManagement = () => {
           />
         </div>
 
-        <div className="flex justify-center lg:flex-row flex-col gap-6 items-center">
+        <div className="flex justify-center 2xl:flex-row flex-col gap-6 items-center">
           {/* OFFICE OF THE GENERAL MANAGER */}
           <MCards
             img={img[5]}

@@ -29,7 +29,7 @@ const CardBoard = () => {
           position={"PRESIDENT"}
         />
       </section>
-      <section className="flex justify-center lg:flex-row flex-col gap-6 items-center">
+      <section className="flex justify-center 2xl:flex-row flex-col gap-6 items-center">
         <BCards
           img={img[4]}
           title={"DISTRICT V REPRESENTATIVE"}
@@ -59,7 +59,7 @@ const CardBoard = () => {
           position={"TREASURER"}
         />
       </section>
-      <section className="flex justify-center lg:flex-row flex-col gap-6 items-center">
+      <section className="flex justify-center 2xl:flex-row flex-col gap-6 items-center">
         <BCards
           img={img[2]}
           title={"DISTRICT III REPRESENTATIVE"}
